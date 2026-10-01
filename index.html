@@ -1,116 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FIT+ Academia | Transforme seu corpo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header id="topo">  
-        <nav id="menu">
-        <figure>
-            <img id="logo" src="img/logo.jpg" alt="Logo da academia">
-        </figure>
 
-        <ul>
-            <li><a href="teste.html">INÍCIO</a></li>
-            <li><a href="sobre.html">ACADEMIA</a></li>
-            <li><a href="contato.html">MODALIDADES</a></li>
-            <li><a href="teste.html">PLANOS</a></li>
-            <li><a href="sobre.html">CONTATO</a></li>
-        </ul>        
-    </nav>
+    <header id="topo">
+        <a href="#inicio">
+            <img id="logo" src="img/logo.jpg" alt="Logo da FIT+ Academia">
+        </a>
+
+        <nav id="menu" aria-label="Menu principal">
+            <ul>
+                <li><a href="#inicio">INÍCIO</a></li>
+                <li><a href="#academia">ACADEMIA</a></li>
+                <li><a href="#modalidades">MODALIDADES</a></li>
+                <li><a href="#planos">PLANOS</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main id="conteudo">
 
-        <section class="secao-principal">
-            <div class="container-principal">
-                <figure>
-                    <img id="principal" src="img/principal.jpg" alt="Imagem principal da academia">
-                </figure>
+        <section id="inicio" class="secao-principal">
+            <figure>
+                <img id="principal" src="img/principal.jpg" alt="Aluna e aluno treinando agachamento com halteres">
+            </figure>
 
-                <h2>Transforme seu corpo conosco</h2>
+            <h1>Transforme seu corpo conosco</h1>
+        </section>
+
+        <section id="academia" class="secao-sobre">
+            <h2>Sobre a Academia</h2>
+
+            <figure class="imagem-academia">
+                <img src="img/sobre.jpg" alt="Alunos treinando no salão principal da academia">
+            </figure>
+
+            <div class="texto-sobre">
+                <p>A FIT+ ACADEMIA é um espaço pensado para quem busca saúde, qualidade de vida e evolução através do exercício físico. Com ambiente moderno, equipamentos de qualidade e acompanhamento profissional, oferecemos uma experiência completa para diferentes objetivos e níveis de treinamento.</p>
+
+                <p>Seja para quem está começando ou para quem já treina há anos, nossa equipe monta um plano de acordo com a sua rotina e os seus resultados esperados, sempre com atenção e segurança.</p>
+
+                <h3>Nossos diferenciais</h3>
+                <ul>
+                    <li>Professores especializados</li>
+                    <li>Equipamentos modernos</li>
+                    <li>Ambiente climatizado</li>
+                    <li>Avaliação física</li>
+                </ul>
+
+                <p>FIT+ ACADEMIA — seu treino, sua evolução, sua melhor versão.</p>
             </div>
         </section>
 
-        <hr>
+        <section id="modalidades" class="secao-modalidades">
+            <h2>Modalidades</h2>
 
-        <section class="secao-sobre">
-            <div class="container-sobre">
-                <figure>
-                    <img src="img/sobre.jpg" alt="Imagem sobre a academia">
-                </figure>
-
-                <div class="texto-sobre">
-                    <h2>FIT+ ACADEMIA</h2>
-
-                    <p>A FIT+ ACADEMIA é um espaço pensado para quem busca saúde, qualidade de vida e evolução através do exercício físico. Com ambiente moderno, equipamentos de qualidade e acompanhamento profissional, oferecemos uma experiência completa para diferentes objetivos e níveis de treinamento.</p>
-                    <p>Nosso diferencial:</p>
-
-                     <ul>
-                        <li>Professores especializados</li>
-                        <li>Equipamentos modernos</li>
-                        <li>Ambiente climatizado</li>
-                        <li>Avaliação física</li>
-                    </ul>
-
-                    <p>FIT+ ACADEMIA — seu treino, sua evolução, sua melhor versão.</p>
-
-                </div>
-            </div>
-        </section>
-
-        <hr>
-
-        <section class="secao-modalidades">
             <div class="container-modalidades">
 
-                <div class="card">
-                <img src="img/musculacao.jpg" alt="Musculação">
-                <div class="card-conteudo">
-                    <h3>Musculação</h3>
-                    <p>Treinamento focado em força e hipertrofia, utilizando pesos livres e aparelhos para fortalecer a musculatura.</p>
-                </div>
-                </div>
-                
-                <div class="card">
-                <img src="img/cross.jpg" alt="Cross Training">
-                <div class="card-conteudo">
-                    <h3>Cross Training</h3>
-                    <p>Treino de alta intensidade que combina levantamento de peso, ginástica e exercícios cardiorrespiratórios.</p>
-                </div>
-                </div>
-            
-                <div class="card">
-                <img src="img/spinning.jpg" alt="Spinning">
-                <div class="card-conteudo">
-                    <h3>Spinning</h3>
-                    <p>Aula dinâmica sobre bicicletas ergométricas que simula diferentes terrenos ao ritmo de músicas energizantes.</p>
-                </div>
-                </div>
+                <article id="musculacao" class="card">
+                    <img src="img/musculacao.jpg" alt="Área de musculação da academia">
+                    <div class="card-conteudo">
+                        <h3>Musculação</h3>
+                        <p>Treinamento focado em força e hipertrofia, utilizando pesos livres e aparelhos para fortalecer a musculatura.</p>
+                    </div>
+                </article>
 
-                <div class="card">
-                <img src="img/pilates.jpg" alt="Pilates">
-                <div class="card-conteudo">
-                    <h3>Pilates</h3>
-                    <p>Método que une controle corporal, flexibilidade e fortalecimento do core, melhorando a postura e o equilíbrio.</p>
-                </div>
-                </div>
+                <article id="cross" class="card">
+                    <span class="selo">1ª aula grátis</span>
+                    <img src="img/cross.jpg" alt="Alunos em treino de Cross Training">
+                    <div class="card-conteudo">
+                        <h3>Cross Training</h3>
+                        <p>Treino de alta intensidade que combina levantamento de peso, ginástica e exercícios cardiorrespiratórios.</p>
+                    </div>
+                </article>
+
+                <article id="spinning" class="card">
+                    <img src="img/spinning.jpg" alt="Aula de Spinning com bicicletas ergométricas">
+                    <div class="card-conteudo">
+                        <h3>Spinning</h3>
+                        <p>Aula dinâmica sobre bicicletas ergométricas que simula diferentes terrenos ao ritmo de músicas energizantes.</p>
+                    </div>
+                </article>
+
+                <article id="pilates" class="card">
+                    <img src="img/pilates.jpg" alt="Aula de Pilates no estúdio">
+                    <div class="card-conteudo">
+                        <h3>Pilates</h3>
+                        <p>Método que une controle corporal, flexibilidade e fortalecimento do core, melhorando a postura e o equilíbrio.</p>
+                    </div>
+                </article>
+
             </div>
         </section>
 
-        <hr>
+        <section id="planos" class="secao-planos">
+            <h2>Nossos Planos</h2>
 
-        
+            <table class="tabela-planos">
+                <caption>Escolha o plano ideal para o seu objetivo</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Plano</th>
+                        <th scope="col">Acesso</th>
+                        <th scope="col">Musculação</th>
+                        <th scope="col">Aulas</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Básico</th>
+                        <td>Segunda a sexta</td>
+                        <td>Sim</td>
+                        <td>Não</td>
+                        <td>R$ 89,90</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Plus</th>
+                        <td>Todos os dias</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>R$ 129,90</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Premium</th>
+                        <td>Todos os dias</td>
+                        <td>Sim</td>
+                        <td>Sim</td>
+                        <td>R$ 169,90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="conheca" class="secao-conheca">
+            <h2>Conheça a FIT+</h2>
+            <p>Clique em uma área da planta para saber mais sobre a modalidade.</p>
+
+            <figure>
+                <img src="img/mapa-academia.png" width="800" height="450" usemap="#mapa-academia" alt="Planta da academia com as áreas de musculação, cross training, spinning e pilates">
+                <figcaption>Planta da FIT+ Academia</figcaption>
+            </figure>
+
+            <map name="mapa-academia">
+                <area shape="rect" coords="40,40,400,250" href="#musculacao" alt="Musculação">
+                <area shape="rect" coords="420,40,760,250" href="#cross" alt="Cross Training">
+                <area shape="rect" coords="40,270,400,410" href="#spinning" alt="Spinning">
+                <area shape="circle" coords="590,340,70" href="#pilates" alt="Pilates">
+            </map>
+        </section>
+
+        <section id="contato" class="secao-contato">
+            <h2>Entre em contato</h2>
+
+            <form class="formulario" action="#" method="post">
+
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(41) 99999-9999">
+                </div>
+
+                <div class="campo">
+                    <label for="data">Data prevista para começar</label>
+                    <input type="date" id="data" name="data">
+                </div>
+
+                <div class="campo">
+                    <label for="modalidade">Modalidade de interesse</label>
+                    <select id="modalidade" name="modalidade">
+                        <option value="">Selecione uma modalidade</option>
+                        <option value="musculacao">Musculação</option>
+                        <option value="cross">Cross Training</option>
+                        <option value="spinning">Spinning</option>
+                        <option value="pilates">Pilates</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Qual horário você prefere treinar?</legend>
+                    <input type="radio" id="horario-manha" name="horario" value="manha">
+                    <label for="horario-manha">Manhã</label>
+
+                    <input type="radio" id="horario-tarde" name="horario" value="tarde">
+                    <label for="horario-tarde">Tarde</label>
+
+                    <input type="radio" id="horario-noite" name="horario" value="noite">
+                    <label for="horario-noite">Noite</label>
+                </fieldset>
+
+                <div class="campo-checkbox">
+                    <input type="checkbox" id="novidades" name="novidades" value="sim">
+                    <label for="novidades">Quero receber novidades e promoções por e-mail</label>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre o seu objetivo"></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
     </main>
 
     <footer id="rodape">
-        <p>&copy;2026 Design By Ingrid Veiga da Costa. Todos os direitos reservados.</p>
+        <address>
+            <strong>FIT+ Academia</strong><br>
+            Rua dos Esportes, 100 – Centro<br>
+            <a href="tel:+5541999999999">(41) 99999-9999</a><br>
+            <a href="mailto:contato@fitplus.com.br">contato@fitplus.com.br</a>
+        </address>
+
+        <ul class="redes-sociais">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+
+        <p>&copy; 2026 FIT+ Academia. Design by Ingrid Veiga da Costa. Todos os direitos reservados.</p>
     </footer>
-    
+
+    <a class="voltar-topo" href="#topo" aria-label="Voltar ao topo">&uarr;</a>
+
 </body>
 </html>

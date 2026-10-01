@@ -1,97 +1,385 @@
-header 
+/*não tá muito bonitpo e dinamico ksks, mas fiz 100% sem usar ia, então isso já me orgulha*/
+
+body
 {
-    background-color: #ded7d7;
-    text-align: center;
     margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222222;
+    background-color: #ffffff;
 }
 
-#logo 
+h2
 {
-    width: 200px;
-    height: 230px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 30px 0;
 }
 
-nav ul li 
+section
 {
-    display: inline-block;
-    margin-right: 10px;
+    padding: 50px 8%;
 }
 
-nav 
+header
 {
     background-color: #201e1e;
-    padding: 10px 1px;
+    text-align: center;
+    padding: 25px 0 0 0;
+    font-family: "Times New Roman", serif;
 }
 
-nav a 
+#logo
 {
-    color: #fff;
+    width: 200px;
+    height: 200px;
+}
+
+nav
+{
+    padding: 15px 0;
+}
+
+nav ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li
+{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav a
+{
+    color: #ffffff;
     text-decoration: none;
     padding: 5px 10px;
 }
 
-.container-principal 
+nav a:hover
 {
-  display: flex;
-  align-items: center; 
-  gap: 15px; 
+    color: #d6336c;
 }
 
-.container-principal img
+.secao-principal
+{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #999999;
+    padding: 16px 8%;
+    font-family: "Times New Roman", serif;
+}
+
+.secao-principal figure
+{
+    width: 450px;
+    margin: 0 30px 0 0;
+}
+
+#principal
 {
     width: 450px;
 }
 
-.container-sobre
+.secao-principal h1
 {
-  display: flex;
-  align-items: center; 
-  gap: 15px; 
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
 }
 
-.container-sobre img
+.imagem-academia
+{
+    float: left;
+    width: 450px;
+    margin: 0 30px 15px 0;
+}
+
+.imagem-academia img
 {
     width: 450px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px #888888;
 }
 
 .texto-sobre
 {
-    display: flex;
-    flex-direction: column;
+    margin-left: 480px;
+}
+
+.secao-sobre h3
+{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.secao-modalidades
+{
+    clear: both; /*peguei de referencia de um canal no youtube*/
+    background-color: #ded7d7;
 }
 
 .container-modalidades
 {
     display: flex;
     flex-direction: row;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
     gap: 20px;
-    padding: 10px;
 }
 
-.card 
+.card
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px #888888;
+}
+
+.card img
+{
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+
+.card-conteudo
+{
+    padding: 15px;
+}
+
+.card-conteudo h3
+{
+    font-size: 20px;
+    margin: 0 0 8px 0;
+}
+
+.card-conteudo p
+{
+    font-size: 15px;
+    margin: 0;
+}
+
+.selo
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #d6336c;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+
+.secao-planos
 {
     background-color: #ffffff;
-    border-radius: 8px;
+}
+
+.tabela-planos
+{
+    width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 3px 3px 8px #888888;
+}
+
+.tabela-planos caption
+{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tabela-planos th
+{
+    padding: 12px;
+    border: 1px solid #cccccc;
+}
+
+.tabela-planos td
+{
+    padding: 12px;
+    border: 1px solid #cccccc;
+}
+
+
+.tabela-planos thead th
+{
+    background-color: #201e1e;
+    color: #ffffff;
+}
+
+.tabela-planos tfoot td
+{
+    background-color: #d6336c;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.secao-conheca
+{
+    background-color: #ded7d7;
+    text-align: center;
+}
+
+.secao-conheca img
+{
     border: 2px solid #333333;
-    width: 280px;         
-    display: flex;
-    flex-direction: column; 
+    border-radius: 8px;
 }
 
-.card:hover 
+.secao-conheca figcaption
 {
-    transform: translateY(-5px); 
+    font-size: 14px;
+    margin-top: 8px;
 }
 
 
-.card img 
+.formulario
 {
-      width: 100%;
-      height: 180px;
+    width: 450px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #f2efef;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px #888888;
 }
 
-.card-conteudo 
+.campo
 {
-  padding: 15px;
+    margin-bottom: 15px;
+}
+
+.campo label
+{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input
+{
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+
+.campo select
+{
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+
+.campo textarea
+{
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+
+.formulario fieldset
+{
+    margin-bottom: 15px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+
+.formulario legend
+{
+    font-weight: bold;
+}
+
+.campo-checkbox
+{
+    margin-bottom: 15px;
+}
+
+.formulario button
+{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #d6336c;
+    border: none;
+    border-radius: 5px;
+}
+
+footer
+{
+    background-color: #201e1e;
+    color: #dddddd;
+    text-align: center;
+    padding: 30px 8%;
+}
+
+footer address
+{
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+footer a
+{
+    color: #ffffff;
+}
+
+footer p
+{
+    font-size: 14px;
+    margin: 15px 0 0 0;
+}
+
+.redes-sociais
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociais li
+{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+.voltar-topo
+{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #201e1e;
+    border-radius: 50%;
 }
